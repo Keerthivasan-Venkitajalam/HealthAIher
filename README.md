@@ -16,122 +16,71 @@ Before starting, ensure you have the following installed:
 
 ---
 
-Directory structure:
-└── Keerthivasan-Venkitajalam-HealthAIher/
-    ├── react-native.config.js
-    ├── metro.config.js
-    ├── app.json
-    ├── index.test.js
-    ├── assets/
-    │   ├── fonts/
-    │   │   ├── BrandonGrotesque-Bold.ttf
-    │   │   ├── Karla-Regular.ttf
-    │   │   ├── Karla-Bold.ttf
-    │   │   └── BrandonGrotesque-Regular.ttf
-    │   ├── lingon-splash.json
-    │   └── images/
-    ├── package.json
-    ├── android/
-    │   ├── gradle.properties
-    │   ├── .gitignore
-    │   ├── gradlew.bat
-    │   ├── gradle/
-    │   │   └── wrapper/
-    │   │       └── gradle-wrapper.properties
-    │   ├── gradlew
-    │   └── app/
-    │       ├── debug.keystore
-    │       ├── proguard-rules.pro
-    │       └── src/
-    │           ├── main/
-    │           │   ├── AndroidManifest.xml
-    │           │   ├── java/
-    │           │   │   └── com/
-    │           │   │       └── anonymous/
-    │           │   │           └── her/
-    │           │   │               ├── MainApplication.kt
-    │           │   │               └── MainActivity.kt
-    │           │   └── res/
-    │           │       ├── mipmap-mdpi/
-    │           │       │   ├── ic_launcher.webp
-    │           │       │   └── ic_launcher_round.webp
-    │           │       ├── mipmap-xxxhdpi/
-    │           │       │   ├── ic_launcher.webp
-    │           │       │   └── ic_launcher_round.webp
-    │           │       ├── mipmap-hdpi/
-    │           │       │   ├── ic_launcher.webp
-    │           │       │   └── ic_launcher_round.webp
-    │           │       ├── mipmap-xxhdpi/
-    │           │       │   ├── ic_launcher.webp
-    │           │       │   └── ic_launcher_round.webp
-    │           │       ├── drawable/
-    │           │       │   ├── rn_edit_text_material.xml
-    │           │       │   └── ic_launcher_background.xml
-    │           │       ├── mipmap-xhdpi/
-    │           │       │   ├── ic_launcher.webp
-    │           │       │   └── ic_launcher_round.webp
-    │           │       ├── values-night/
-    │           │       │   └── colors.xml
-    │           │       └── values/
-    │           │           ├── strings.xml
-    │           │           ├── styles.xml
-    │           │           └── colors.xml
-    │           └── debug/
-    │               └── AndroidManifest.xml
-    ├── .expo/
-    │   ├── devices.json
-    │   ├── settings.json
-    │   ├── packager-info.json
-    │   └── README.md
-    ├── babel.config.js
-    ├── README.md
-    ├── index.js
-    └── src/
-        ├── fonts/
-        │   ├── BrandonGrotesque-Bold.ttf
-        │   ├── Karla-Regular.ttf
-        │   ├── Karla-Bold.ttf
-        │   └── BrandonGrotesque-Regular.ttf
-        ├── assets/
-        │   ├── fonts/
-        │   │   ├── BrandonGrotesque-Bold.ttf
-        │   │   ├── Karla-Regular.ttf
-        │   │   ├── Karla-Bold.ttf
-        │   │   └── BrandonGrotesque-Regular.ttf
-        │   ├── lingon-splash.json
-        │   └── images/
-        ├── components/
-        │   ├── Calendar.js
-        │   ├── Range.js
-        │   ├── DatePicker.js
-        │   ├── Header.js
-        │   ├── ButtonSecondary.js
-        │   ├── ButtonPrimary.js
-        │   ├── Picture.js
-        │   └── NotesButton.js
-        ├── screens/
-        │   ├── PeriodLengthScreen.js
-        │   ├── StartScreen.js
-        │   ├── LoginScreen.js
-        │   ├── SplashScreen.js
-        │   ├── RegisterScreen.js
-        │   ├── CalendarScreen.js
-        │   ├── OverviewScreen.js
-        │   ├── CycleLengthScreen.js
-        │   ├── SettingsScreen.js
-        │   ├── NotesScreen.js
-        │   └── LatestStartDateScreen.js
-        ├── styles/
-        │   ├── typography.js
-        │   └── colors.js
-        ├── images/
-        ├── config/
-        │   ├── keys.js
-        │   └── Navigation/
-        │       ├── AppNavigation.js
-        │       └── AuthNavigation.js
-        └── index.js
+### **Directory Structure**
 
+```
+Keerthivasan-Venkitajalam-HealthyHer/
+├── react-native.config.js
+├── metro.config.js
+├── app.json
+├── index.test.js
+├── assets/
+│   ├── fonts/
+│   │   ├── BrandonGrotesque-Bold.ttf
+│   │   ├── Karla-Regular.ttf
+│   │   ├── Karla-Bold.ttf
+│   │   └── BrandonGrotesque-Regular.ttf
+│   ├── lingon-splash.json
+│   └── images/
+├── package.json
+├── android/
+│   ├── gradle.properties
+│   ├── .gitignore
+│   ├── gradlew.bat
+│   ├── gradle/
+│   │   └── wrapper/
+│   │       └── gradle-wrapper.properties
+│   ├── gradlew
+│   └── app/
+│       ├── debug.keystore
+│       ├── proguard-rules.pro
+│       └── src/
+│           ├── main/
+│           │   ├── AndroidManifest.xml
+│           │   ├── java/
+│           │   │   └── com/
+│           │   │       └── anonymous/
+│           │   │           └── her/
+│           │   │               ├── MainApplication.kt
+│           │   │               └── MainActivity.kt
+│           │   └── res/
+│           │       ├── mipmap-mdpi/
+│           │       ├── mipmap-xxxhdpi/
+│           │       ├── mipmap-hdpi/
+│           │       ├── mipmap-xxhdpi/
+│           │       ├── mipmap-xhdpi/
+│           │       ├── drawable/
+│           │       └── values-night/
+│           └── debug/
+│               └── AndroidManifest.xml
+├── .expo/
+│   ├── devices.json
+│   ├── settings.json
+│   ├── packager-info.json
+│   └── README.md
+├── babel.config.js
+├── README.md
+├── index.js
+└── src/
+    ├── fonts/
+    ├── assets/
+    ├── components/
+    ├── screens/
+    ├── styles/
+    ├── images/
+    ├── config/
+    └── index.js
+```
 
 ### *📥 Cloning the Repository*  
 1. Clone the repository:  
